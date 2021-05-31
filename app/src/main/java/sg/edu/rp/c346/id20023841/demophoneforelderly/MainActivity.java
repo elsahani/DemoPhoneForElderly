@@ -22,7 +22,15 @@ public class MainActivity extends AppCompatActivity {
         btnCallSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:+12345678"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:+92240336"));
+                startActivity(intentCall);
+            }
+        });
+
+        btnCallDaughter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:+89675543"));
                 startActivity(intentCall);
             }
         });
